@@ -1,0 +1,41 @@
+name: flutter_chat_demo
+description: This is the demo for chat app by Flutter
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  firebase_auth: ^0.14.0+5
+  google_sign_in: ^4.0.7
+  cloud_firestore: ^0.13.7
+  fluttertoast: ^3.1.3
+  image_picker: ^0.6.1+8
+  shared_preferences: ^0.5.3+4
+  firebase_storage: ^3.0.6
+  cached_network_image: 2.0.0-rc.1
+  intl: ^0.15.7
+  firebase_messaging: 6.0.13
+  flutter_local_notifications: 1.4.0
+  photo_view: ^0.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+
+
+  fonts:
+    - family: Zyclavian
+      fonts:
+        - asset: fonts/Zyclavian_light_v1.ttf
+        - asset: fonts/Zyclavian_bold_v2.ttf
+          weight: 700
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Medium.ttf

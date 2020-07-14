@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1063916257873",
+    "firebase_url": "https://zychat-60349.firebaseio.com",
+    "project_id": "zychat-60349",
+    "storage_bucket": "zychat-60349.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063916257873:android:e5a9402e0d8c8470f9ae70",
+        "android_client_info": {
+          "package_name": "com.qdotdash.zychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063916257873-613n67bn0h1bno8bb8aco87paodud5jg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qdotdash.zychat",
+            "certificate_hash": "416147137a8e4a5437733bfea24a95f5aea20c95"
+          }
+        },
+        {
+          "client_id": "1063916257873-5k3p1m40kghj1h38m18dkl3v84co1hk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC35uOgykk753dBc1ZkzxF1UZiEE5sahoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063916257873-5k3p1m40kghj1h38m18dkl3v84co1hk6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
