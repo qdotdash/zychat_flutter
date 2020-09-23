@@ -1,4 +1,4 @@
-package com.dfa.flutterchatdemo;
+package com.qdotdash.zychat;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
