@@ -1,6 +1,6 @@
 # Zychat - A chat application in Zyclavian
 
-A chat application using flutter with aesthetic carbon UI
+<img src="https://github.com/qdotdash/zychat_flutter/blob/master/screenshots/banner.png">
 
 ## In the words of the creator : 
 > "You may never know"
