@@ -1,13 +1,13 @@
-# Zychat - A chat application in Zyclavian
+# Zychat
 
-<img src="https://github.com/qdotdash/zychat_flutter/blob/master/screenshots/banner.png">
+<img src="https://github.com/qdotdash/zychat_flutter/blob/master/screenshots/banner.png" width = 700>
 
 ## In the words of the creator : 
 > "You may never know"
 
 ## Description
 
-Developed using flutter, integrated with firebase for authentication and database and uses javascript to interact with cloud functions for message notification service.
+A chat application in *Zyclavian* developed using flutter, integrated with firebase for authentication and database and uses javascript to interact with cloud functions for message notification service.
 
 ## Screenshots
 
