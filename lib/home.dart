@@ -17,7 +17,6 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 import 'const.dart';
 import 'const.dart';
-import 'firebase_notifications.dart';
 import 'main.dart';
 
 //todo make aesthetic cards
@@ -34,6 +33,8 @@ class HomeScreenState extends State<HomeScreen> {
   HomeScreenState({Key key, @required this.currentUserId});
 
   final FirebaseMessaging firebaseMessaging = FirebaseMessaging();
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+      FlutterLocalNotificationsPlugin();
   final String currentUserId;
   final GoogleSignIn googleSignIn = GoogleSignIn();
 
@@ -47,6 +48,7 @@ class HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     registerNotification();
+    configLocalNotification();
   }
 
   void onItemMenuPress(Choice choice) {
@@ -207,12 +209,23 @@ class HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  void configLocalNotification() {
+    var initializationSettingsAndroid =
+        new AndroidInitializationSettings('app_icon');
+    var initializationSettingsIOS = new IOSInitializationSettings();
+    var initializationSettings = new InitializationSettings(
+        initializationSettingsAndroid, initializationSettingsIOS);
+    flutterLocalNotificationsPlugin.initialize(initializationSettings);
+  }
+
   void showNotification(message) async {
     var androidPlatformChannelSpecifics = new AndroidNotificationDetails(
       Platform.isAndroid ? 'com.qdotdash.zychat' : 'com.qdotdash.zychat',
       'Test Notification',
       'Test Notification Zychat',
       playSound: true,
+      enableLights: true,
+      ledColor: Colors.lightGreenAccent,
       enableVibration: true,
       importance: Importance.Max,
       priority: Priority.High,
@@ -225,9 +238,9 @@ class HomeScreenState extends State<HomeScreen> {
 //    print(message['body'].toString());
 //    print(json.encode(message));
 
-//    await flutterLocalNotificationsPlugin.show(0, message['title'].toString(),
-//        message['body'].toString(), platformChannelSpecifics,
-//        payload: json.encode(message));
+    await flutterLocalNotificationsPlugin.show(0, message['title'].toString(),
+        message['body'].toString(), platformChannelSpecifics,
+        payload: json.encode(message));
 
 //    await flutterLocalNotificationsPlugin.show(
 //        0, 'plain title', 'plain body', platformChannelSpecifics,
