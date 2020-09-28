@@ -1,2 +1,2 @@
-#Zychat - A chat application in Zyclavian(YMNK)
+# Zychat - A chat application in Zyclavian(YMNK)
 
