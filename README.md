@@ -1,6 +1,6 @@
 # Zychat
 
-<img src="https://github.com/qdotdash/zychat_flutter/blob/master/screenshots/banner.png" width = 700>
+<img src="https://github.com/qdotdash/zychat_flutter/blob/master/screenshots/banner.png">
 
 ## In the words of the creator : 
 > "You may never know"
