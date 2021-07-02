@@ -7,7 +7,7 @@
 
 ## Description
 
-A chat application in *Zyclavian*(by Alina) developed using flutter, integrated with firebase for authentication and database and uses javascript to interact with cloud functions for message notification service.
+A chat application in *Zyclavian*(a secret script by Alina) developed using flutter, integrated with firebase for authentication and database and uses javascript to interact with cloud functions for message notification service.
 
 ## Screenshots
 
